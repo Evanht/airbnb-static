@@ -1,10 +1,120 @@
----
-title: Le Wagon Middleman boilerplate
----
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
+
+
+<!-- Your banner code -->
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
+  <div class="banner-content">
+    <h1>Some Stuff</h1>
+    <p>Very cool stuff, useful and smart</p>
+    <%= link_to "Get started", "#", class: "btn btn-primary btn-lg" %>
+  </div>
 </div>
+
+<!-- Your features code -->
+<div class="text-center ">
+  <div class="wrapper-grey">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <img src="images/globe.png" alt="globe">
+          <h3>Feature Header</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet in doloremque perspiciatis vel, velit fuga id voluptatibus nobis rem.</p>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <img src="images/globe.png" alt="globe">
+          <h3>Feature Header</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet in doloremque perspiciatis vel, velit fuga id voluptatibus nobis rem.</p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <img src="images/globe.png" alt="globe">
+          <h3>Feature Header</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet in doloremque perspiciatis vel, velit fuga id voluptatibus nobis rem.</p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <img src="images/globe.png" alt="globe">
+          <h3>Feature Header</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet in doloremque perspiciatis vel, velit fuga id voluptatibus nobis rem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Your cards code -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/background.jpg');">
+        <div class="card-category">Popular</div>
+        <div class="card-description">
+          <h2>Some stuff</h2>
+          <p>Very cool stuff, useful and smart</p>
+        </div>
+        <img class="card-user avatar" src="images/anne.jpg">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/background.jpg');">
+        <div class="card-category">Popular</div>
+        <div class="card-description">
+          <h2>Some stuff</h2>
+          <p>Very cool stuff, useful and smart</p>
+        </div>
+        <img class="card-user avatar" src="images/anne.jpg">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/background.jpg');">
+        <div class="card-category">Popular</div>
+        <div class="card-description">
+          <h2>Some stuff</h2>
+          <p>Very cool stuff, useful and smart</p>
+        </div>
+        <img class="card-user avatar" src="images/anne.jpg">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Your newsletter code -->
+<div class="newsletter text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-offset-4 col-xs-4"></div>
+      <h3>Sign up to our newsletter</h3>
+      <form action="#" class="form-inline">
+        <input type="email" placeholder="email" class="form-control">
+        <input type="password" placeholder="passwordl" class="form-control">
+        <input type="submit" value="Sign In" class="btn btn-primary">
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Your map code -->
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.8655909, 2.378983);
+
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [{"featureType":"all","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"},{"saturation":"-100"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40},{"visibility":"off"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"off"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#4d6059"}]},{"featureType":"landscape","elementType":"geometry.stroke","stylers":[{"color":"#4d6059"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"color":"#4d6059"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"lightness":21}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#4d6059"}]},{"featureType":"poi","elementType":"geometry.stroke","stylers":[{"color":"#4d6059"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#7f8d89"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#7f8d89"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#7f8d89"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#7f8d89"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#7f8d89"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#7f8d89"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"#7f8d89"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#7f8d89"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#2b3638"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2b3638"},{"lightness":17}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#24282b"}]},{"featureType":"water","elementType":"geometry.stroke","stylers":[{"color":"#24282b"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels.icon","stylers":[{"visibility":"off"}]}] // TODO: replace [] by array from https://snazzymaps.com/
+};
+
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  title: "You are here!"
+});
+</script>
+
